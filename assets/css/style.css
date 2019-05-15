@@ -313,6 +313,7 @@ margin-right: 23px;
 
 .team-inner {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 68px;
 }
 
@@ -345,7 +346,6 @@ margin-right: 23px;
 }
 .team-items {
   max-width: 280px;
-  margin-right: 47px;
 }
 .team-items:nth-child(3) {
 margin-right: 0;
@@ -354,8 +354,6 @@ margin-right: 0;
    display: flex;
    flex-direction: column;
    justify-content: center;
-    margin-top: 15px;
-    margin-left: 20px;
 }
 .team-name {
   font-size: 22px;
@@ -383,6 +381,7 @@ margin-right: 0;
 .team-img {
 width: 120px;
 height: 120px;
+margin-right: 20px;
 }
 
 
@@ -552,7 +551,7 @@ margin-left: -5px;
   margin-left: 70px;
 }
 .team-items-text {
-  margin-top: 15px;
+
 }
 .team-title {
   font-size: 30px;
@@ -566,6 +565,7 @@ margin-left: -5px;
 .team-img {
   width: 100px;
   height: 100px;
+  margin-right: 20px;
 }
 .team-name {
   font-size: 18px;
