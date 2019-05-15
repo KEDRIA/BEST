@@ -340,12 +340,9 @@ margin-right: 23px;
 }
 
 
-.team-content {
-  display: flex;
-  width: 33%;
-}
 .team-items {
   max-width: 280px;
+  display: flex;
 }
 .team-items:nth-child(3) {
 margin-right: 0;
