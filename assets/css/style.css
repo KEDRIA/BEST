@@ -27,31 +27,27 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 .header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
 }
-
 .header-inner {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 200px;
 }
 .header-social {
 display: inline-block;
 color: #fa5c65;
+padding-top:25px;
 }
 /* Logo */
 .logo {
-  width: 140px;
-  height: 74px;
-  background-color: #fa5c65;
-  border-radius: 0 0 10px 10px;
-  position: absolute;
-  top: 0;
-  left: 5px;
+    width: 140px;
+    height: 74px;
+    background-color: #fa5c65;
+    border-radius: 0 0 10px 10px;
+    margin-right: 255px;
 }
 .logo-text {
   font-family: 'Domine', serif;
@@ -75,7 +71,7 @@ color: #fa5c65;
   transition: color .1s linear;
 }
 .nav-link:nth-child(4) {
-margin-right: 30px;
+margin-right: 32px;
 }
 .nav-link:hover {
   color: #fa5c65;
@@ -93,9 +89,16 @@ margin-right: 30px;
 	background: url("../img/bg.png") no-repeat top center;
 	background-size: cover;
 }
-
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .intro-inner {
-  width: 520px;
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .intro-title {
@@ -123,12 +126,13 @@ margin-right: 30px;
 }
 
 .intro-btn {
-  display: block;
-  width: 171px;
-  height: 64px;
-  border-radius: 5px;
-  background-color: #fa5c65;
-
+    width: 171px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fa5c65;
 }
 
 .intro-btn-text {
@@ -136,11 +140,8 @@ margin-right: 30px;
   font-size: 15px;
   font-weight: 700;
   color: #fff;
-  padding-top: 10px;
-  line-height: 48.38px;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .point {
@@ -435,310 +436,4 @@ margin-right: 20px;
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   color: #b9c0c6;
-}
-
-
-
-
-/* Adaptive */
-
-/* 1200px */
-@media (max-width: 1200px) {
-  .logo {
-    left: 82px;
-  }
-.intro-inner {
-  margin-top: 110px;
-  margin-left: 60px;
-}
-}
-
-
-/* 990px */
-@media (max-width: 990px) {
-  /* Logo */
-  .logo {
-    width: 125px;
-    height: 55px;
-    left: 145px;
-  }
-  .logo-text {
-    font-size: 15px;
-    padding-top: 30px;
-  }
-
-  /* Nav */
-  .nav {
-    margin-top: -10px;
-    margin-right: 75px;
-  }
-  .nav-link {
-    font-size: 11px;
-  }
-/* Intro */
-.intro-inner {
-  margin-top: 25px;
-  margin-left: 135px;
-}
-.intro-title {
-  font-size: 35px;
-
-}
-.intro-point {
-    margin-left: -8px;
-}
-.intro-text {
-  font-size: 16px;
-
-}
-.intro-btn {
-  width: 135px;
-  height: 50px;
-}
-.intro-btn-text {
-  padding-top: 1px;
-}
-/* Work */
-.work-inner {
-    display: flex;
-    flex: 1 1 0;
-    margin-left: 80px;
-}
-.work-point {
-margin-left: -5px;
-}
-.work-title {
-  font-size: 24px;
-}
-.work-text {
-  font-size: 13px;
-}
-
-.arrows {
-  font-size: 12px;
-}
-.arrows-last {
-  margin-right: 14px;
-}
-/* Portfolio */
-.section-portfolio {
-  margin-bottom: 100px;
-}
-.portfolio-inner {
-  margin-left: 75px;
-}
-
-.portfolio-title {
-  font-size: 36px;
-}
-
-.portfolio-items:last-child {
-      margin-left: 20px;
-}
-.portfolio-middle-text,
-.portfolio-sub-text {
-  font-size: 14px;
-}
-/* Team */
-.section-team {
-  margin-bottom: 68px;
-}
-.team-inner {
-  margin-top: 10px;
-  margin-left: 70px;
-}
-.team-items-text {
-
-}
-.team-title {
-  font-size: 30px;
-  margin-left: 70px;
-
-}
-.team-text {
-  font-size: 15px;
-  margin-left: 70px;
-}
-.team-img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-}
-.team-name {
-  font-size: 18px;
-
-}
-.team-profession {
-  font-size: 13px;
-
-}
-.team-description {
-  font-size: 13px;
-
-}
-/* Footer */
-.footer-social {
-  margin-left: 100px;
-}
-.copyright-text {
-  margin-right: 10px;
-}
-}
-
-/* 770px */
-@media (max-width: 770px) {
-  /* Logo */
-  .logo {
-    width: 85px;
-    height: 40px;
-    left: 150px;
-  }
-  .logo-text {
-    font-size: 11px;
-    padding-top: 22px;
-  }
-  .header-social {
-    font-size: 10px;
-    padding-right: 10px;
-    margin-right: 25px;
-  }
-.facebook {
-  margin-right: 10px;
-}
-
-  /* Nav */
-  .nav {
-    margin-top: -10px;
-    margin-right: 50px;
-  }
-  .nav-link {
-    font-size: 8px;
-  }
-/* Intro */
-.intro-inner {
-  max-width: 375px;
-  margin-top: 15px;
-  margin-left: 125px;
-}
-.intro-title {
-  font-size: 26px;
-
-}
-.intro-point {
-    margin-left: -5px;
-}
-.intro-text {
-  font-size: 11px;
-
-}
-.intro-btn {
-  width: 100px;
-  height: 45px;
-}
-.intro-btn-text {
-    padding-top: 0px;
-    font-size: 11px;
-}
-/* Work */
-.work-inner {
-    display: flex;
-    flex: 1 1 0;
-    margin-left: 75px;
-}
-.work-point {
-margin-left: -5px;
-}
-.work-title {
-  font-size: 20px;
-}
-.work-text {
-  font-size: 10px;
-
-}
-/* Portfolio */
-.section-portfolio {
-  margin-bottom: 90px;
-}
-.portfolio-inner {
-  margin-left: 75px;
-}
-.mac-book {
-  width: 300px;
-  height: 300px;
-}
-.portfolio-title {
-  font-size: 22px;
-
-}
-.portfolio-suptext {
-  font-size: 13px;
-
-}
-.portfolio-items:last-child {
-  max-width: 325px;
-  margin-top: 45px;
-  margin-left: 0;
-}
-.portfolio-middle-text,
-.portfolio-subtext {
-  font-size: 13px;
-  margin-top: 5px;
-
-
-}
-/* Team */
-.section-team {
-  margin-bottom: 100px;
-}
-.team-inner {
-  margin-top: 10px;
-  margin-bottom: -50px;
-  margin-left: 70px;
-}
-.team-content {
-  margin-right: 0px;
-}
-.team-items-text {
-  margin-top: 8px;
-}
-.team-title {
-  font-size: 30px;
-  margin-left: 70px;
-
-}
-.team-text {
-  font-size: 14px;
-  margin-bottom: 30px;
-  margin-left: 70px;
-}
-.team-img {
-  width: 60px;
-  height: 60px;
-}
-.team-name {
-  font-size: 11px;
-
-}
-.team-profession {
-  font-size: 11px;
-
-}
-.team-description {
-  font-size: 11px;
-  max-width: 118px;
-
-}
-.arrows-last {
-  font-size: 12px;
-  margin-right: 32px;
-}
-/* Footer */
-.footer-social {
-  margin-left: 75px;
-}
-.copyright-text {
-  margin-right: 10px;
-}
-}
-
 }
