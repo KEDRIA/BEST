@@ -20,58 +20,66 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   max-width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
   position: relative;
 
 }
 
 /* Header */
 .header {
-    width: 100%;
-    display: flex;
-    align-content: flex-start;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
 }
+
 .header-inner {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 200px;
+  display: flex;
+  justify-content: flex-end;
+  
 }
 .header-social {
 display: inline-block;
 color: #fa5c65;
-padding-top:25px;
 }
 /* Logo */
 .logo {
-    width: 140px;
-    height: 74px;
-    background-color: #fa5c65;
-    border-radius: 0 0 10px 10px;
-    margin-right: 300px;
+  width: 140px;
+  height: 74px;
+  background-color: #fa5c65;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 5px;
 }
 .logo-text {
   font-family: 'Domine', serif;
   font-size: 20px;
   font-weight: bold;
-  text-align: center;
   padding-top: 40px;
 }
 
 /* Nav */
+.nav {
+  margin-top: 29px;    
 
+}
 .nav-link {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #263742;
   display: inline-block;
-  padding-top: 27px;
   margin-right: 36px;
   text-decoration: none;
   text-transform: uppercase;
   transition: color .1s linear;
 }
 .nav-link:nth-child(4) {
-margin-right: 32px;
+margin-right: 30px;
 }
 .nav-link:hover {
   color: #fa5c65;
@@ -85,19 +93,13 @@ margin-right: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
-	background: url("../img/bg.png") no-repeat top center;
-	background-size: cover;
-}
-.intro-wrapper {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    background: url("../img/bg.png") no-repeat top center;
+    background-size: cover;
 }
+
 .intro-inner {
-    width: 520px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
+  width: 520px;
 }
 
 .intro-title {
@@ -120,18 +122,16 @@ margin-right: 32px;
 }
 
 .intro-point {
-  margin-left: -14px;
   color: #fa5c65;
 }
 
 .intro-btn {
-    width: 171px;
-    height: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: #fa5c65;
+  display: block;
+  width: 171px;
+  height: 64px;
+  border-radius: 5px;
+  background-color: #fa5c65;
+
 }
 
 .intro-btn-text {
@@ -139,8 +139,11 @@ margin-right: 32px;
   font-size: 15px;
   font-weight: 700;
   color: #fff;
+  padding-top: 10px;
+  line-height: 48.38px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .point {
@@ -174,7 +177,7 @@ margin-right: 23px;
 
 .work-inner {
   display: flex;
-  flex: 1 1 0;
+  justify-content: space-between;
 }
 
 .work-items {
@@ -233,9 +236,7 @@ margin-right: 23px;
   vertical-align: middle;
 
 }
-.arows-last span{
-	margin-right: 5px;
-}
+
 
 /* Portfolio */
 .section-portfolio {
@@ -436,3 +437,306 @@ margin-right: 20px;
   font-size: 13px;
   color: #b9c0c6;
 }
+
+
+
+
+/* Adaptive */
+
+@media (max-width: 939px) {
+   .container {
+    padding: 0 20px;
+   }
+  .logo {
+    width: 110px;
+    height: 50px;
+    top: 0px;
+    left: 20px;
+}
+  .logo-text {
+    font-size: 15px;
+    margin-bottom: 22px;
+  }
+  .nav {
+    margin-top: 15px;
+    margin-right: 30px;
+  }
+  .nav-link {
+    font-size: 12px;
+    margin-right: 30px;
+  }
+  .nav-link:nth-child(4) {
+    margin-right: 15px; 
+  }
+  .header-social {
+    font-size: 12px;
+  }
+  .facebook {
+    margin-right: 15px;
+  }
+  
+  .intro-title {
+    font-size: 34px;
+    line-height: 45px;
+  }
+  .intro-text {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  .intro-btn {
+    width: 125px;
+    height: 50px;
+}
+  .intro-btn-text {
+    font-size: 12px;
+    padding-top: 3px;
+    
+  }
+  .intro-point {
+    margin-left: 0;
+  }
+  .work-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .work-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .arrows {
+    font-size: 10px;
+  }
+  .team-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .team-description {
+    width: 129px;
+    font-size: 12px;
+}
+.footer-inner {
+  padding: 46px 0px;
+}
+
+}
+
+@media (max-width: 770px) {
+  .container {
+    padding: 0 20px;
+  }
+  .intro {
+    min-height: 650px;
+  }
+  .header-inner {
+    margin-bottom: 10px;
+  }
+  .nav-link {
+    font-size: 9px;
+  }
+  .section-work {
+    margin-bottom: 54px;
+  }
+  .work-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .work-text {
+    max-width: 185px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .section-portfolio {
+    margin-bottom: 54px;
+  }
+  .portfolio-items:last-child {
+    max-width: 250px;
+}
+  .mac-book {
+    width: 380px;
+    height: 400px;
+  }
+  .portfolio-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .portfolio-suptext {
+    font-size: 13px;
+  }
+  .portfolio-middle-text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .portfolio-subtext {
+    font-size: 12px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .section-team {
+    margin-bottom: 0;
+  }
+  .team-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0;
+  }
+  .team-items {
+    max-width: 220px;
+  }
+  .team-items-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .team-title {
+    font-size: 28px;
+  }
+  .team-text {
+    font-size: 12px;
+  }
+  .team-img {
+    margin-right: 10px;
+  }
+  .team-img img {
+    width: 80px;
+    height: 80px;
+  }
+  .team-name {
+    font-size: 18px;
+    line-height: 8px;
+}
+  .team-profession {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+  .team-description {
+    max-width: 125px;
+    font-size: 10px;
+    line-height: 15px;
+}
+  .arrows-last {
+    margin-right: 20px;
+    margin-bottom: 25px;
+  }
+  .footer-social {
+    font-size: 12px;
+  }
+  .footer-inner {
+    padding: 30px 0;
+  }
+  .copyright-text {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 575px) {
+   .container {
+      padding: 0 10px;
+    }
+    .nav-link {
+      font-size: 6px;
+      margin-right: 25px;
+  }
+    .header-social {
+      font-size: 8px;
+    }
+    .logo {
+      left: 15px;
+  }
+    .intro-title {
+      font-size: 33px;
+      line-height: 45px;
+  }
+    .intro-text {
+      font-size: 13px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+    .work-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+    .work-items {
+      margin-bottom: 50px;
+    }
+    .work-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .work-text {
+      max-width: 500px;
+      font-size: 15px;
+      line-height: 20px;
+  }
+    .portfolio-content {
+      display: flex;
+      justify-content: center;
+    }
+    .portfolio-inner {
+      display: flex;
+      
+      align-items: center;
+    }
+      
+    .portfolio-items img {
+      display: flex;
+      justify-content: center;
+      width: 340px;
+      height: 340px;
+      
+    }
+    .portfolio-items:last-child {
+      max-width: 285px;
+      margin-right: 18px;
+    }
+    .portfolio-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+    .portfolio-suptext {
+        font-size: 10px;
+    }
+    .portfolio-middle-text {
+      font-size: 8px;
+      line-height: 17px;
+  }
+    .portfolio-subtext {
+      font-size: 8px;
+      line-height: 17px;
+      margin-bottom: 20px;
+  }
+    .team-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+    .team-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .team-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+    .team-text {
+      font-size: 10px;
+    }
+    .arrows-last {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+  }
+  .footer-social {
+    font-size: 10px;
+}
+.copyright-text {
+  font-size: 10px;
+}
+    
+    }
