@@ -99,7 +99,7 @@ margin-right: 30px;
 }
 
 .intro-inner {
-  width: 520px;
+  max-width: 520px;
 }
 
 .intro-title {
@@ -115,7 +115,7 @@ margin-right: 30px;
 .intro-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  width: 405px;
+  max-width: 405px;
   color: #314a5b;
   margin-bottom: 42px;
   line-height: 40.35px;
@@ -203,7 +203,7 @@ margin-right: 23px;
 }
 .work-text {
   font-family: 'Open Sans', sans-serif;
-  width: 260px;
+  max-width: 260px;
   font-size: 15px;
   color: #9aa0ab;
   margin-bottom: 30px;
@@ -222,6 +222,7 @@ margin-right: 23px;
 
 }
 
+
 .arrows-last {
   font-family: 'Montserrat';
   font-size: 14px;
@@ -229,9 +230,10 @@ margin-right: 23px;
   color: #fa5c65;
   display: flex;
   justify-content: flex-end;
-  text-transform: uppercase;
-  text-decoration: none;
+  
+  
 }
+
 .fas {
   vertical-align: middle;
 
@@ -308,8 +310,9 @@ margin-right: 23px;
 }
 
 /* Team */
+
 .section-team {
-  margin-bottom: 68px;
+  margin-bottom: 64px;
 }
 
 .team-inner {
@@ -342,7 +345,7 @@ margin-right: 23px;
 
 
 .team-items {
-  max-width: 280px;
+  max-width: 290px;
   display: flex;
 }
 .team-items:nth-child(3) {
@@ -370,10 +373,13 @@ margin-right: 0;
 
 .team-description {
   font-family: 'Open Sans', sans-serif;
-  width: 146px;
+  max-width: 146px;
   font-size: 14px;
   color: #9aa0ab;
   line-height: 20px;
+}
+.team-description:last-child {
+  margin-bottom: 34px;
 }
 
 .team-img {
@@ -399,7 +405,7 @@ margin-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 46px;
+  padding: 46px 0px;
 }
 
 .footer-social {
@@ -445,6 +451,7 @@ margin-right: 20px;
 
 @media (max-width: 939px) {
    .container {
+    max-width: 771px;
     padding: 0 20px;
    }
   .logo {
@@ -496,23 +503,83 @@ margin-right: 20px;
   .intro-point {
     margin-left: 0;
   }
+  .work-items {
+    margin-right: 40px;
+  }
+  .work-items:last-child {
+    margin-right: 0;
+  }
   .work-title {
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 15px;
   }
   .work-text {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 18px;
     margin-bottom: 20px;
+}
+.section-portfolio {
+  margin-bottom: 55px;
+}
+  .portfolio-items img {
+    width: 380px;
+    height: 380px;
+  }
+  
+  .portfolio-title {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  .portfolio-suptext {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.portfolio-middle-text {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+  .portfolio-subtext {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 15px;
   }
   .arrows {
     font-size: 10px;
   }
+  .team-box {
+    text-align: center;
+  }
   .team-inner {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+}
+  .team-items {
+    max-width: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 180px;
+    margin-bottom: 25px;
+  }
+  .team-items:last-child {
+    margin-right: 0;
+  }
+  .team-items-text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .team-img {
+    margin-bottom: 25px;
+}
+  .team-img img {
+    width: 124px;
+    height: 124px;
   }
   .team-description {
-    width: 129px;
+    max-width: 129px;
     font-size: 12px;
 }
 .footer-inner {
@@ -521,41 +588,70 @@ margin-right: 20px;
 
 }
 
+
 @media (max-width: 770px) {
   .container {
+    max-width: 576px;
     padding: 0 20px;
   }
   .intro {
     min-height: 650px;
   }
-  .header-inner {
-    margin-bottom: 10px;
+  .intro-inner {
+    max-width: 485px;
   }
+  .intro-title {
+    font-size: 31px;
+  }
+  .intro-text {
+    font-size: 13px;
+  }
+  .header-inner {
+    margin-right: 0;
+  }
+  .nav {
+    margin-top: 10px;
+    margin-right: 0;
+}
   .nav-link {
     font-size: 9px;
+    margin-right: 18px;
   }
   .section-work {
     margin-bottom: 54px;
   }
+  .work-items {
+    margin-right: 45px;
+  }
+  .work-items:last-child {
+    margin-right: 0;
+  }
   .work-title {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   .work-text {
-    max-width: 185px;
-    font-size: 12px;
-    line-height: 18px;
-  }
+    max-width: 200px;
+    font-size: 11px;
+    line-height: 17px;
+}
   .section-portfolio {
     margin-bottom: 54px;
   }
-  .portfolio-items:last-child {
-    max-width: 250px;
+  .portfolio-inner {
+    display: flex;
+    flex-direction: column-reverse;
 }
-  .mac-book {
-    width: 380px;
-    height: 400px;
+  .portfolio-items {
+    margin-right: 0;
   }
+  .portfolio-items:last-child {
+    max-width: 198px;
+  }
+  .portfolio-items img {
+    width: 210px;
+    height: 220px;
+}
   .portfolio-title {
     font-size: 30px;
     margin-bottom: 10px;
@@ -577,67 +673,78 @@ margin-right: 20px;
   }
   .team-inner {
     display: flex;
-    justify-content: space-between;
-    margin: 0 0;
-  }
+    flex-direction: column;
+    align-items: center;
+}
   .team-items {
-    max-width: 220px;
+    max-width: 280px;
+    margin-right: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: nowrap;
   }
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   .team-items-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
   .team-title {
-    font-size: 28px;
-  }
-  .team-text {
-    font-size: 12px;
-  }
-  .team-img {
-    margin-right: 10px;
-  }
-  .team-img img {
-    width: 80px;
-    height: 80px;
-  }
-  .team-name {
-    font-size: 18px;
-    line-height: 8px;
+    font-size: 50px;
 }
+  .team-text {
+    font-size: 20px;
+}
+  .team-img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 60px;
+    margin-right: 35px;
+  }
+  
+  .team-name {
+    font-size: 23px;
+    line-height: 15px;
+  }
   .team-profession {
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 6px;
   }
-  .team-description {
-    max-width: 125px;
-    font-size: 10px;
-    line-height: 15px;
-}
-  .arrows-last {
-    margin-right: 20px;
-    margin-bottom: 25px;
+    .team-description {
+      max-width: 125px;
+      font-size: 12px;
+      line-height: 15px;
   }
-  .footer-social {
-    font-size: 12px;
+    .arrows-last {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+    .footer-social {
+      font-size: 12px;
+    }
+    .footer-inner {
+      padding: 30px 0;
+    }
+    .copyright-text {
+      font-size: 12px;
+    }
   }
-  .footer-inner {
-    padding: 30px 0;
-  }
-  .copyright-text {
-    font-size: 12px;
-  }
-}
 
 
 @media (max-width: 575px) {
    .container {
+      max-width: 480px;
       padding: 0 10px;
     }
     .nav-link {
       font-size: 6px;
-      margin-right: 25px;
+      margin-right: 20px;
   }
     .header-social {
       font-size: 8px;
@@ -646,14 +753,14 @@ margin-right: 20px;
       left: 15px;
   }
     .intro-title {
-      font-size: 33px;
-      line-height: 45px;
+      font-size: 30px;
+      line-height: 40px;
   }
     .intro-text {
-      font-size: 13px;
-      line-height: 26px;
+      font-size: 11px;
+      line-height: 23px;
       margin-bottom: 30px;
-    }
+  }
     .work-inner {
       display: flex;
       flex-direction: column;
@@ -662,9 +769,9 @@ margin-right: 20px;
     .work-items {
       margin-bottom: 50px;
     }
-    .work-title {
-      font-size: 20px;
-      margin-bottom: 10px;
+    .work-items:last-child {
+      margin-right: 50px;
+  }
     }
     .work-text {
       max-width: 500px;
@@ -693,18 +800,22 @@ margin-right: 20px;
       margin-right: 18px;
     }
     .portfolio-title {
-      font-size: 18px;
+      font-size: 36px;
       margin-bottom: 10px;
   }
-    .portfolio-suptext {
-        font-size: 10px;
-    }
+  .portfolio-items img {
+    width: 210px;
+    height: 220px;
+}
+  .portfolio-suptext {
+    font-size: 15px;
+}
     .portfolio-middle-text {
-      font-size: 8px;
+      font-size: 14px;
       line-height: 17px;
   }
     .portfolio-subtext {
-      font-size: 8px;
+      font-size: 14px;
       line-height: 17px;
       margin-bottom: 20px;
   }
