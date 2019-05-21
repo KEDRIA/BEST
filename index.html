@@ -1,954 +1,184 @@
-body {
-    font-family: 'Domine', serif;
-    color: #fff;
-    margin: 0;
-
-}
-
-*,
-*:after,
-*:before {
-    box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-/* Container */
-.container {
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 15px;
-    position: relative;
-
-}
-
-/* Header */
-.header {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-}
-
-.header-inner {
-    display: flex;
-    justify-content: flex-end;
-
-}
-.header-social {
-    display: inline-block;
-    color: #fa5c65;
-}
-/* Logo */
-.logo {
-    width: 140px;
-    height: 74px;
-    background-color: #fa5c65;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 5px;
-}
-.logo-text {
-    font-family: 'Domine', serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 40px;
-}
-
-/* Nav */
-.nav {
-    margin-top: 29px;
-
-}
-.nav-link {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: #263742;
-    display: inline-block;
-    margin-right: 36px;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.1s linear;
-}
-.nav-link:nth-child(4) {
-    margin-right: 30px;
-}
-.nav-link:hover {
-    color: #fa5c65;
-}
-
-/* Intro */
-.intro {
-    width: 100%;
-    height: 100vh;
-    margin-bottom: 86px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url("../img/bg.png") no-repeat top center;
-    background-size: cover;
-}
-
-.intro-inner {
-    max-width: 520px;
-}
-
-.intro-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    color: #314a5b;
-    letter-spacing: -1.44px;
-    line-height: 53px;
-    text-transform: uppercase;
-}
-
-.intro-text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    max-width: 405px;
-    color: #314a5b;
-    margin-bottom: 42px;
-    line-height: 40.35px;
-}
-
-.intro-point {
-    color: #fa5c65;
-}
-
-.intro-btn {
-    display: block;
-    width: 171px;
-    height: 64px;
-    border-radius: 5px;
-    background-color: #fa5c65;
-
-}
-
-.intro-btn-text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    color: #fff;
-    padding-top: 10px;
-    line-height: 48.38px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.point {
-    color: #74505e;
-}
-
-/* Social */
-.facebook {
-    margin-right: 23px;
-}
-
-.facebook,
-.twitter {
-    color: #fa5c65;
-    text-decoration: none;
-    transition: color 0.2s linear;
-}
-
-.facebook:hover {
-    color: #fff;
-}
-
-.twitter:hover {
-    color: #fff;
-}
-
-/* Work */
-.section-work {
-    margin-bottom: 104px;
-}
-
-.work-inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.work-items {
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-}
-
-.work-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 24px;
-    color: #465065;
-    text-transform: uppercase;
-}
-
-.work-point {
-    margin-left: 0;
-    color: #fa5c65;
-}
-.work-text {
-    font-family: 'Open Sans', sans-serif;
-    max-width: 260px;
-    font-size: 15px;
-    color: #9aa0ab;
-    margin-bottom: 30px;
-    line-height: 22px;
-
-}
-.arrows {
-    display: inline-block;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: bolder;
-    color: #fa5c65;
-
-    text-transform: uppercase;
-    text-decoration: none;
-
-}
-
-.arrows-last {
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: bolder;
-    color: #fa5c65;
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-.fas {
-    vertical-align: middle;
-
-}
-
-/* Portfolio */
-.section-portfolio {
-    margin-bottom: 110px;
-}
-
-.portfolio-inner {
-    display: flex;
-    align-items: center;
-}
-
-.portfolio-items {
-    margin-right: 56px;
-    position: relative;
-}
-
-.portfolio-items:last-child {
-    max-width: 380px;
-}
-
-.portfolio-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    color: #314a5b;
-    margin-bottom: 17px;
-    text-transform: uppercase;
-
-}
-
-.portfolio-point {
-    color: #fa5c65;
-
-}
-
-.portfolio-suptext {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: #314a5b;
-    margin-bottom: 20px;
-
-}
-
-.portfolio-middle-text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    color: #9aa0ab;
-    margin-bottom: 20px;
-    line-height: 22px;
-
-}
-
-.portfolio-subtext {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    color: #9aa0ab;
-    line-height: 22px;
-    margin-bottom: 40px;
-
-}
-
-.portfolio-arrow {
-    width: 12px;
-    height: 9px;
-    position: absolute;
-    top: 239px;
-    left: 50px;
-}
-
-/* Team */
-
-.section-team {
-    margin-bottom: 64px;
-}
-
-.team-inner {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 68px;
-}
-
-.team-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: #314a5b;
-    margin-bottom: 16px;
-    letter-spacing: -0.48px;
-    text-transform: uppercase;
-}
-
-.team-point {
-    color: #fa5c65;
-}
-
-.team-text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 40px;
-    color: #9aa0ab;
-}
-
-.team-items {
-    max-width: 290px;
-    display: flex;
-}
-.team-items:nth-child(3) {
-    margin-right: 0;
-}
-.team-items-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.team-name {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #314a5b;
-    text-transform: uppercase;
-}
-
-.team-profession {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    margin-bottom: 14px;
-    color: #f0454c;
-}
-
-.team-description {
-    font-family: 'Open Sans', sans-serif;
-    max-width: 146px;
-    font-size: 14px;
-    color: #9aa0ab;
-    line-height: 20px;
-}
-.team-description:last-child {
-    margin-bottom: 34px;
-}
-
-.team-img {
-    width: 120px;
-    height: 120px;
-    margin-right: 20px;
-}
-
-.fas {
-    vertical-align: middle;
-}
-
-/* Footer */
-.footer {
-    border-top: 2px solid #e6eaed;
-
-}
-
-.footer-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 46px 0;
-}
-
-.footer-social {
-    max-width: 140px;
-
-    color: #b9c0c6;
-}
-.social-link {
-    color: #b9c0c6;
-    text-transform: uppercase;
-}
-
-.fb,
-.gp,
-.inst,
-.tw {
-    margin-right: 10px;
-}
-
-.tw:hover {
-    color: #fa5c65;
-}
-
-.inst:hover {
-    color: #fa5c65;
-}
-
-.fb:hover {
-    color: #fa5c65;
-}
-
-.gp:hover {
-    color: #fa5c65;
-}
-
-.copyright-text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    color: #b9c0c6;
-}
-
-/* Adaptive */
-
-@media (max-width: 939px) {
-    .container {
-        max-width: 771px;
-        padding: 0 20px;
-    }
-    .logo {
-        width: 110px;
-        height: 50px;
-        top: 0;
-        left: 20px;
-    }
-    .logo-text {
-        font-size: 15px;
-        margin-bottom: 22px;
-    }
-    .nav {
-        margin-top: 15px;
-        margin-right: 30px;
-    }
-    .nav-link {
-        font-size: 12px;
-        margin-right: 30px;
-    }
-    .nav-link:nth-child(4) {
-        margin-right: 15px;
-    }
-    .header-social {
-        font-size: 12px;
-    }
-    .facebook {
-        margin-right: 15px;
-    }
-
-    .intro-title {
-        font-size: 34px;
-        line-height: 45px;
-    }
-    .intro-text {
-        font-size: 15px;
-        line-height: 26px;
-        margin-bottom: 30px;
-    }
-    .intro-btn {
-        width: 125px;
-        height: 50px;
-    }
-    .intro-btn-text {
-        font-size: 12px;
-        padding-top: 3px;
-
-    }
-    .intro-point {
-        margin-left: 0;
-    }
-    .work-items {
-        margin-right: 40px;
-    }
-    .work-items:last-child {
-        margin-right: 0;
-    }
-    .work-title {
-        font-size: 23px;
-        margin-bottom: 15px;
-    }
-    .work-text {
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 20px;
-    }
-    .section-portfolio {
-        margin-bottom: 55px;
-    }
-    .portfolio-items img {
-        width: 380px;
-        height: 380px;
-    }
-
-    .portfolio-title {
-        font-size: 30px;
-        margin-bottom: 12px;
-    }
-    .portfolio-suptext {
-        font-size: 13px;
-        margin-bottom: 15px;
-    }
-    .portfolio-middle-text {
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 15px;
-    }
-    .portfolio-subtext {
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 15px;
-    }
-    .arrows {
-        font-size: 10px;
-    }
-    .team-box {
-        text-align: center;
-    }
-    .team-inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-bottom: 0;
-    }
-    .team-items {
-        max-width: 125px;
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: 180px;
-        margin-bottom: 25px;
-    }
-    .team-items:last-child {
-        margin-right: 0;
-    }
-    .team-items-text {
-        text-align: center;
-        display: flex;
-        align-items: center;
-    }
-    .team-img {
-        margin-bottom: 25px;
-    }
-    .team-img img {
-        width: 124px;
-        height: 124px;
-    }
-    .team-description {
-        max-width: 129px;
-        font-size: 12px;
-    }
-    .footer-inner {
-        padding: 46px 0;
-    }
-
-}
-
-@media (max-width: 770px) {
-    .container {
-        max-width: 576px;
-        padding: 0 20px;
-    }
-    .intro {
-        min-height: 650px;
-    }
-    .intro-inner {
-        max-width: 485px;
-    }
-    .intro-title {
-        font-size: 31px;
-    }
-    .intro-text {
-        font-size: 13px;
-    }
-    .header-inner {
-        margin-right: 0;
-    }
-    .nav {
-        margin-top: 10px;
-        margin-right: 0;
-    }
-    .nav-link {
-        font-size: 9px;
-        margin-right: 18px;
-    }
-    .section-work {
-        margin-bottom: 54px;
-    }
-    .work-items {
-        margin-right: 45px;
-    }
-    .work-items:last-child {
-        margin-right: 0;
-    }
-    .work-title {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-    .work-text {
-        max-width: 200px;
-        font-size: 11px;
-        line-height: 17px;
-    }
-    .section-portfolio {
-        margin-bottom: 54px;
-    }
-    .portfolio-inner {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .portfolio-items {
-        margin-right: 0;
-    }
-    .portfolio-items:last-child {
-        max-width: 205px;
-    }
-    .portfolio-items img {
-        width: 210px;
-        height: 220px;
-    }
-    .portfolio-title {
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-    .portfolio-suptext {
-        font-size: 13px;
-    }
-    .portfolio-middle-text {
-        font-size: 12px;
-        line-height: 17px;
-    }
-    .portfolio-subtext {
-        font-size: 12px;
-        line-height: 17px;
-        margin-bottom: 20px;
-    }
-    .section-team {
-        margin-bottom: 0;
-    }
-    .team-inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .team-items {
-        max-width: 280px;
-        margin-right: 0;
-        margin-bottom: 0;
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .team-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .team-items-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 0;
-    }
-    .team-title {
-        font-size: 50px;
-    }
-    .team-text {
-        font-size: 20px;
-    }
-    .team-img {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 60px;
-        margin-right: 35px;
-    }
-
-    .team-name {
-        font-size: 23px;
-        line-height: 15px;
-    }
-    .team-profession {
-        font-size: 13px;
-        margin-bottom: 6px;
-    }
-    .team-description {
-        max-width: 125px;
-        font-size: 12px;
-        line-height: 15px;
-    }
-    .arrows-last {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 25px;
-    }
-    .footer-social {
-        font-size: 12px;
-    }
-    .footer-inner {
-        padding: 30px 0;
-    }
-    .copyright-text {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 575px) {
-    .container {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-    .nav-link {
-        font-size: 9px;
-        margin-right: 20px;
-    }
-    .header-social {
-        font-size: 8px;
-    }
-    .logo {
-        left: 15px;
-    }
-    .facebook,
-    .twitter {
-        font-size: 11px;
-    }
-    .intro-title {
-        font-size: 34px;
-        line-height: 40px;
-    }
-    .intro-text {
-        font-size: 11px;
-        line-height: 23px;
-        margin-bottom: 30px;
-    }
-    .work-inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .work-items {
-        margin-bottom: 50px;
-    }
-    .work-items:last-child {
-        margin-right: 50px;
-    }
-
-    .work-text {
-        max-width: 500px;
-        font-size: 15px;
-        line-height: 20px;
-    }
-    .portfolio-content {
-        display: flex;
-        justify-content: center;
-    }
-    .portfolio-inner {
-        display: flex;
-
-        align-items: center;
-    }
-
-    .portfolio-items img {
-        display: flex;
-        justify-content: center;
-        width: 340px;
-        height: 340px;
-
-    }
-
-    .portfolio-title {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-    .portfolio-items img {
-        width: 210px;
-        height: 220px;
-    }
-    .portfolio-suptext {
-        font-size: 15px;
-    }
-    .portfolio-middle-text {
-        font-size: 12px;
-        line-height: 17px;
-    }
-    .portfolio-subtext {
-        font-size: 12px;
-        line-height: 17px;
-        margin-bottom: 20px;
-    }
-    .team-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    .team-inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .team-title {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-    .team-text {
-        font-size: 10px;
-    }
-    .arrows-last {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 25px;
-    }
-    .footer-social {
-        font-size: 10px;
-    }
-    .copyright-text {
-        font-size: 10px;
-    }
-}
-@media (max-width: 420px) {
-  .logo {
-    display: none;
-  }
-}
-
-@media (max-width: 375px) {
-    .container {
-        max-width: 320px;
-        padding: 0 10px;
-    }
-    .logo {
-        display: none;
-    }
-    .header-inner {
-        display: flex;
-        justify-content: center;
-    }
-    .nav-link {
-        font-size: 9px;
-        margin-right: 20px;
-    }
-    .facebook,
-    .twitter {
-        font-size: 10px;
-    }
-    .intro {
-        min-height: 650px;
-        margin-bottom: 50px;
-    }
-    .intro-title {
-        font-size: 24px;
-        line-height: 32px;
-    }
-    .intro-text {
-        font-size: 10px;
-        line-height: 20px;
-        margin-bottom: 30px;
-    }
-    .work-items,
-    .work-items:last-child {
-
-        margin-right: 0;
-    }
-    .work-title {
-        font-size: 19px;
-        margin-bottom: 10px;
-    }
-    .work-text {
-        max-width: 300px;
-        font-size: 13px;
-        line-height: 17px;
-    }
-    .work-point {
-        margin-left: 0;
-    }
-    .arrows {
-        font-size: 8px;
-    }
-    .portfolio-items {
-        margin-right: 0;
-    }
-    .portfolio-items:last-child {
-        max-width: 205px;
-        margin-right: 0;
-    }
-    .portfolio-title {
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-    .portfolio-suptext {
-        font-size: 13px;
-    }
-    .portfolio-middle-text {
-        font-size: 11px;
-        line-height: 17px;
-        margin-bottom: 20px;
-    }
-    .portfolio-subtext {
-        font-size: 11px;
-        line-height: 17px;
-        margin-bottom: 20px;
-    }
-
-    .portfolio-items img {
-        width: 200px;
-        height: 200px;
-    }
-    .team-title {
-        font-size: 33px;
-        margin-bottom: 10px;
-    }
-    .team-text {
-      font-size: 13px;
-  }
-    .footer-inner {
-        display: flex;
-        align-items: baseline;
-        padding: 20px 0;
-    }
-    .copyright-text,
-    .footer-social {
-        font-size: 8px;
-
-    }
-
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Montserrat|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="container header-container">
+      <div class="header-inner">
+        <div class="logo">
+          <div class="logo-text">Freelancer <span class="point">.</span></div>
+        </div>
+        <nav class="nav">
+
+          <a class="nav-link" href="">About</a>
+          <a class="nav-link" href="">Work</a>
+          <a class="nav-link" href="">Portfolio</a>
+          <a class="nav-link" href="">Contact</a>
+            <div class="header-social">
+          <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="twitter" href="#"><i class=" twitter fab fa-twitter"></i></a>
+          </div>
+
+        </nav>
+
+      </div>
+    </div>
+    </div>
+  </header>
+<main>
+<section class="intro">
+    
+      <div class="container">
+          <section class="intro-inner">
+          <h1 class="intro-title">intelligence <br> is nothing without ambition<span class="intro-point">.</span> </h1>
+					<p class="intro-text">We’re small but impressive creative agency.</p>
+					<a class="intro-btn">
+						<div class="intro-btn-text">Read More</div>
+					</a>
+        </section>
+      </div>
+    
+  </section>
+
+  <section class="section-work">
+    <div class="container">
+      <div class="work-inner">
+        <div class="work-items">
+          <h2 class="work-title">Peace <br> of mind<span class="work-point">.</span></h2>
+          <p class="work-text">You’re safe with us. The privacy and security of your financial information is our top priority.</p>
+          <a  class="arrows" href="#">
+           <span>More</span>
+           <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+        </div>
+
+        <div class="work-items">
+          <h2 class="work-title">Free<span class="work-point">.</span><br> actually free</h2>
+          <p class="work-text">No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.</p>
+          <a  class="arrows" href="#">
+           <span>More</span>
+           <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+        </div>
+        <div class="work-items">
+          <h2 class="work-title">Simple <br> payments<span class="work-point">.</span></h2>
+          <p class="work-text">The same debit card you use to buy coffee lets deposit money straight to your bank account.</p>
+          <a  class="arrows" href="#">
+           <span>More</span>
+           <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-portfolio">
+    <div class="container">
+      
+      <div class="portfolio-inner">
+        <div class="portfolio-items">
+          <img class="mac-book"src="assets/img/MacBook.png" alt="">
+        </div>
+        <div class="portfolio-items">
+          <h2 class="portfolio-title">Portfolio<span class="portfolio-point">.</span></h2>
+          <p class="portfolio-suptext">We are small, but strong team</p>
+          <p class="portfolio-middle-text">No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.</p>
+          <p class="portfolio-subtext">The same debit card you use to buy coffee lets deposit money straight to your bank account.</p>
+          <a  class="arrows" href="#">
+           <span>More</span>
+           <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <section class="section-team">
+    <div class="container">
+      <div class="team-box">
+      <h2 class="team-title">Our Team<span class="team-point">.</span></h2>
+      <p class="team-text">They are big but still friendly.</p>
+    </div>
+        
+      <div class="team-inner">
+
+        <div class="team-items">
+            <div class="team-img">
+            <img src="assets/img/Photo.png" alt="">
+            </div>
+            <div class="team-items-text">
+            <h2 class="team-name">Joey</h2>
+            <p class="team-profession">Web developer</p>
+            <p class="team-description">Coffee lover. Always on bike. iPhone fan.</p>
+            </div>
+
+        </div>
+        <div class="team-items">
+              <div class="team-img">
+            <img src="assets/img/Photo-1.png" alt="">
+          </div>
+            <div class="team-items-text">
+            <h2 class="team-name">Matt</h2>
+            <p class="team-profession">Web designer</p>
+            <p class="team-description">MTB Biker. Photoshop Master. Loving Father.</p>
+          </div>
+
+        </div>
+
+        <div class="team-items">
+              <div class="team-img">
+            <img  src="assets/img/Photo-2.png" alt="">
+          </div>
+            <div class="team-items-text">
+            <h2 class="team-name">Mike</h2>
+            <p class="team-profession">Copywriter</p>
+            <p class="team-description">Drummer. Soup lover. Beer Drinker. Cyclist.</p>
+               
+          </div>
+          
+                    
+          </div>
+          
+    </div>
+    <a  class="arrows arrows-last" href="#">
+        <span>More</span>
+        <i class="fas fa-long-arrow-alt-right"></i>
+    </a>
+  </div>
+      
+
+  </section>
+</main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-social">
+          <a class="social-link" href="#"><i class="tw fab fa-twitter"></i></a>
+          <a class="social-link" href="#"><i class="inst fab fa-instagram"></i></a>
+          <a class="social-link" href="#"><i class="fb fab fa-facebook-f"></i></a>
+          <a class="social-link" href="#"><i class="gp fab fa-google-plus-g"></i></a>
+        </div>
+        <div class="copyright">
+          <span class="copyright-text">© Freelancer - Designed by Wojtek Kwiatkowski</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>
