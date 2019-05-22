@@ -13,32 +13,37 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
 
     <div class="container header-container">
-      <div class="header-inner">
+      <div class="header-inner" id="header">
         <div class="logo">
           <div class="logo-text">Freelancer <span class="point">.</span></div>
         </div>
-        <nav class="nav">
+        <nav class="nav active" id="nav">
 
-          <a class="nav-link" href="">About</a>
-          <a class="nav-link" href="">Work</a>
-          <a class="nav-link" href="">Portfolio</a>
-          <a class="nav-link" href="">Contact</a>
+          <a class="nav-link" href="#"data-scroll="#about">About</a>
+          <a class="nav-link" href="#"data-scroll="#work">Work</a>
+          <a class="nav-link" href="#"data-scroll="#portfolio">Portfolio</a>
+          <a class="nav-link" href="#"data-scroll="#contacts">Contact</a>
             <div class="header-social">
           <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
           <a class="twitter" href="#"><i class=" twitter fab fa-twitter"></i></a>
           </div>
 
         </nav>
+        <button class="nav-toggle" id="nav-toggle" type="button">
+          <span class="nav-toggle-item">Menu</span>
+
+          
+        </button>
 
       </div>
     </div>
     </div>
   </header>
 <main>
-<section class="intro">
+<section class="intro" id="intro">
     
       <div class="container">
           <section class="intro-inner">
@@ -179,6 +184,8 @@
 
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
