@@ -771,12 +771,12 @@ background: none;
         align-items: center;
     }
     .team-items {
-      max-width: 250px;
-      margin-right: 0;
-      margin-bottom: 0;
-      display: flex;
-      flex-wrap: nowrap;
-  }
+        max-width: 270px;
+        margin-right: 0;
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
     .team-box {
         display: flex;
         flex-direction: column;
@@ -787,7 +787,7 @@ background: none;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 60px;
-        margin-right: 38px;
+        margin-right: 10px;
     }
   .team-title {
     font-size: 24px;
