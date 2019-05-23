@@ -695,11 +695,11 @@ background: none;
     }
     .header-inner {
         width: 100%;
-        /* display: none; */
+        
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #fbd38d;
+        background-color: #fff;
     }
     .nav-link {
         display: block;
