@@ -1081,6 +1081,11 @@ transform:translate3d(0, 0, 0);
 .active {
 background-color: #fbd38d;
 }
+.work-text {
+    max-width: 500px;
+    font-size: 14px;
+    line-height: 20px;
+}
 .footer-inner {
     display: flex;
     align-items: baseline;
